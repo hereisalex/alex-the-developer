@@ -10,6 +10,7 @@ const Footer = () => {
             Created by Alex McKenzie
           </h3>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
+          <h5><b>Tech Stack: </b>Next.js, React, TypeScript, TailwindCSS, Markup</h5>
 
           </div>
         </div>

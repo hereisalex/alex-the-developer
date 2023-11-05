@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* scroll down bounce to hint at more content below dashboard */
+
+:root {
+  --accent: #fc6b03;
+  background-color: #f7f7f7;
+}
+
+
+.dashboard-icon {
+  transition: all .1s ease-out;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.dashboard-icon-wrapper {
+  height: 150px;
+}
+
+.dashboard {
+  height: 50vh;
+}
+.dashboard-icon:hover {
+  outline: solid 2px #ffb580;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset, 0px 0px 78px 3px rgba(252,107,3,0.9);
+}
+.accent-bg {
+  background-color: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.appClass {
+  color: white;
+  transition: all 1s ease both;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.slide-in1 {
+	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+
+ @-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}

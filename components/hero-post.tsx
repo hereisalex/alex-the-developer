@@ -16,6 +16,7 @@ type Props = {
 const HeroPost = ({
   title,
   coverImage,
+  
   date,
   excerpt,
   author,

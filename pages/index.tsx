@@ -7,6 +7,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
+import Dashboard from '../components/dashboard'
 
 type Props = {
   allPosts: Post[]
@@ -22,16 +23,17 @@ export default function Index({ allPosts }: Props) {
           <title>Alex McKenzie | Fullstack Developer</title>
         </Head>
         <Container>
-          <div className='max-w-4xl mx-auto'>
-
           <Intro />
+          <div className='max-w-7xl mx-auto'>
+
+          <Dashboard />
           {heroPost && (
             <HeroPost
             title={heroPost.title}
             coverImage={heroPost.coverImage}
             date={heroPost.date}
             author={heroPost.author}
-            slug={heroPost.slug}ß
+            slug={heroPost.slug}
             excerpt={heroPost.excerpt}
             />
             )}
