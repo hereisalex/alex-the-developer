@@ -13,8 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 .dashboard-icon {
   transition: all .1s ease-out;
   width: 120px;
@@ -28,7 +26,7 @@ html {
 }
 
 .dashboard {
-  height: 50vh;
+  height: 60vh;
 }
 .dashboard-icon:hover {
   outline: solid 2px #ffb580;

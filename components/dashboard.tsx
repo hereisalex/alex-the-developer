@@ -6,7 +6,13 @@ import { PiChatsCircleDuotone,
          PiSealQuestionDuotone,
          PiInstagramLogoDuotone,
          PiLinkedinLogoDuotone } from 'react-icons/pi';
+import { PiChatsCircleDuotone, 
+         PiGithubLogoDuotone,
+         PiSealQuestionDuotone,
+         PiInstagramLogoDuotone,
+         PiLinkedinLogoDuotone } from 'react-icons/pi';
 import 'react-awesome-button/dist/styles.css';
+
 
 
 // add day night mode switch to top right. reduce size of glow. think about diffferent colors. elastic scroll ease-out-back 
@@ -34,6 +40,7 @@ const Dashboard = () => {
       <p className="text-lg mt-3">Github</p>
     </div>
       <div className="dashboard-icon-wrapper m-7 justify-center text-center sr6">
+      <div className="dashboard-icon-wrapper m-7 justify-center text-center sr6">
         <Link href="#blog">
           <BiMessageSquareEdit size="100%" color={iconColor} className={appClass} />
         </Link>
@@ -57,6 +64,7 @@ const Dashboard = () => {
         <PiSealQuestionDuotone size="100%" color={iconColor} className={appClass} />
       </Link>
       <p className="text-lg mt-3">I'm Feeling Lucky</p>
+    </div> */}
     </div> */}
   </div>
   );
