@@ -2,7 +2,7 @@
 title: 'Unveiling the Future: Pre-rendering with Static Generation in Next.js'
 excerpt: 'Embark on a mystical journey of pre-rendering with Static Generation in Next.js, as we gaze into the crystal ball of web development.'
 coverImage: '/assets/blog/prerender/cover.jpg'
-date: '2023-10-14'
+date: '2023-10-06'
 author:
   name: Alex McKenzie
   picture: '/assets/blog/headshot.jpeg'
