@@ -9,6 +9,9 @@
   background-color: #f7f7f7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .dashboard-icon {
   transition: all .1s ease-out;
@@ -23,7 +26,7 @@
 }
 
 .dashboard {
-  height: 50vh;
+  height: 60vh;
 }
 .dashboard-icon:hover {
   outline: solid 2px #ffb580;
@@ -43,6 +46,39 @@
 
 }
 
+.sr1 {
+	-webkit-animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000)  both;
+	        animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000)  both;
+}
+.sr2 {
+	-webkit-animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.1s both;
+	        animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.1s both;
+}
+.sr3 {
+	-webkit-animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s both;
+	        animation: slide-in-blurred-right 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s both;
+}
+.sr4 {
+	-webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.3s both;
+	        animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.3s both;
+}
+.sr5 {
+	-webkit-animation: slide-in-blurred-right 0.85s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
+	        animation: slide-in-blurred-right 0.85s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
+}
+.sr6 {
+	-webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.5s both;
+	        animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.5s both;
+}
+.sr7 {
+	-webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.6s both;
+	        animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.6s both;
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+	        animation: slide-in-bottom 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+}
 
 
 
@@ -56,6 +92,52 @@
 .slide-in1 {
 	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
 	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
 }
 
  @-webkit-keyframes slide-in-fwd-center {
@@ -79,6 +161,31 @@
   100% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
