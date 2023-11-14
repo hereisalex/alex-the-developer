@@ -5,7 +5,9 @@ import { PiChatsCircleDuotone,
          PiGithubLogoDuotone,
          PiInstagramLogoDuotone,
          PiLinkedinLogoDuotone } from 'react-icons/pi';
-import 'react-awesome-button/dist/styles.css';
+import styles from './dashboard.module.css'; // Import the CSS file
+
+
 
 
 
@@ -50,6 +52,13 @@ const Dashboard = () => {
     <PiChatsCircleDuotone size="100%" color={iconColor} className={appClass} />
   </Link>
   <p className="text-lg mt-3">Contact</p>
+</div>
+<div className="absolute bottom-8 right-10">
+<Link href="#blog">
+<div className={styles.shakeVertical}>
+        <h1 className="text-9xl">☟</h1>
+      </div>
+      </Link>
 </div>
 </div>
   );
