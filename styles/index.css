@@ -25,9 +25,6 @@ html {
   height: 150px;
 }
 
-.dashboard {
-  height: 60vh;
-}
 .dashboard-icon:hover {
   outline: solid 2px #ffb580;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset, 0px 0px 78px 3px rgba(252,107,3,0.9);
@@ -86,6 +83,10 @@ html {
 	        animation: slide-in-bottom 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
 }
 
+.slide-in-bottom-nodelay {
+	-webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-bottom 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
 
 
 

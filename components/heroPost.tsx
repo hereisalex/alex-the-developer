@@ -1,6 +1,6 @@
 import Avatar from "./avatar";
-import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
+import DateFormatter from "./dateFormatter";
+import CoverImage from "./coverImage";
 import Link from "next/link";
 import type Author from "../interfaces/author";
 
@@ -16,15 +16,16 @@ type Props = {
 const HeroPost = ({
   title,
   coverImage,
-  
   date,
   excerpt,
   author,
   slug,
 }: Props) => {
   return (
-    <section id="#blog">
-      <div className="slide-in-bottom mb-8 md:mb-16" id="blog">
+    <section>
+      <div className="hero">
+      <h1 id="blog" className="slide-in-bottom mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Blog</h1>
+      <div className="slide-in-bottom mb-8 md:mb-16" >
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
@@ -34,7 +35,7 @@ const HeroPost = ({
               as={`/posts/${slug}`}
               href="/posts/[slug]"
               className="hover:underline"
-            >
+              >
               {title}
             </Link>
           </h3>
@@ -47,6 +48,7 @@ const HeroPost = ({
           <Avatar name={author.name} picture={author.picture} />
         </div>
       </div>
+              </div>
     </section>
   );
 };
