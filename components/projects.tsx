@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="projects grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
         <div>
           <div className="mb-5">
-            <CoverImage slug="cover-image" title="Liftr" src="/assets/projects/liftrcover.png" />
+            <CoverImage slug="liftr-cover-image" title="Liftr" src="/assets/projects/liftrcover.png" link="https://github.com/hereisalex/liftr-react-native" />
           </div>
           <h3 className="text-3xl mb-3 leading-snug">
             <Link
@@ -31,7 +31,7 @@ const Projects = () => {
         </div>
         <div>
           <div className="mb-5">
-            <CoverImage slug="cover-image" title="AutoGPT" src="/assets/projects/gpt.png" />
+            <CoverImage slug=-"autogpt-cover-image" title="AutoGPT" src="assets/projects/gpt.png" link="https://github.com/hereisalex/autogpt">
           </div>
           <h3 className="text-3xl mb-3 leading-snug">
             <Link
