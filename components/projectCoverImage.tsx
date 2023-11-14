@@ -5,11 +5,11 @@ import Image from 'next/image'
 type Props = {
   title: string
   src: string
+  link: string
   slug?: string
-  link?: string
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+export const ProjectCoverImage = ({ title, src, slug, link }: Props) => {
   const image = (
     <Image
       src={src}
@@ -24,11 +24,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   return (
     <div className="sm:mx-0">
       {slug ? (
-        <Link
-        as={`/posts/${slug}`}
-        href="/posts/[slug]"
-        className="hover:underline"
-      >
+        <Link href={link}>
         {image}
       </Link>
       ) : (
@@ -39,4 +35,4 @@ const CoverImage = ({ title, src, slug }: Props) => {
 }
 
 
-export default CoverImage
+export default ProjectCoverImage
