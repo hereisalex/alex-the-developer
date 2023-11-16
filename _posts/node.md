@@ -1,13 +1,13 @@
 ---
 title: "What's the difference between Node.js, npm, and npx?"
 excerpt: "Get a grip on Node.js, npm, and npx with a practical breakdown of their roles in modern JavaScript development."
-coverImage: '/assets/blog/node/cover.png'
+coverImage: '/assets/blog/node/cover.jpg'
 date: '2023-11-12'
 author:
   name: Alex McKenzie
   picture: '/assets/blog/headshot.jpeg'
 ogImage:
-  url: '/assets/blog/node/cover.png'
+  url: '/assets/blog/node/cover.jpg'
 ---
 
 # Understanding npm, npx, and Node.js
