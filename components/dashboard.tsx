@@ -16,7 +16,8 @@ const Dashboard = () => {
   const appClass = "mx-auto p-5 bg-white dashboard-icon hover:cursor-pointer rounded-3xl";
   const iconColor = "#222222"
   return (
-<div className="dashboard flex flex-direction-right mt-[40vh] mb-[10vh]">
+<div className="dashboard flex flex-col lg:flex-row md:mt-[40vh] md:mb-[10vh] w-100">
+  <div className="row1 flex flex-row justify-evenly">
       <div className="dashboard-icon-wrapper m-7 justify-center text-center sr1">
         <Link href="https://linkedin.com/in/alexcodes" target="_blank" rel="noopener noreferrer">
           <PiLinkedinLogoDuotone size="100%" color={iconColor} className={appClass} />
@@ -29,6 +30,8 @@ const Dashboard = () => {
       </Link>
       <p className="text-lg mt-3">Projects</p>
     </div>
+    </div>
+    <div className="row2 flex flex-row justify-evenly">
       <div className="dashboard-icon-wrapper m-7 justify-center text-center sr3">
         <Link href="https://github.com/hereisalex" target="_blank" rel="noopener noreferrer">
           <PiGithubLogoDuotone size="100%" color={iconColor} className={appClass}  />
@@ -41,6 +44,8 @@ const Dashboard = () => {
         </Link>
         <p className="text-lg mt-3">Blog</p>
       </div>
+    </div>
+    <div className="row3 flex flex-row justify-evenly">
     <div className="dashboard-icon-wrapper m-7 justify-center text-center sr5">
       <Link href="https://instagram.com/alexmckenzie" target="_blank" rel="noopener noreferrer">
         <PiInstagramLogoDuotone size="100%" color={iconColor} className={appClass} />
@@ -53,10 +58,11 @@ const Dashboard = () => {
   </Link>
   <p className="text-lg mt-3">Contact</p>
 </div>
+</div>
 <div className="absolute bottom-8 right-10">
 <Link href="#blog">
 <div className={styles.shakeVertical}>
-        <h1 className="text-9xl">☟</h1>
+        <h1 className="text-6xl md:text-9xl">☟</h1>
       </div>
       </Link>
 </div>

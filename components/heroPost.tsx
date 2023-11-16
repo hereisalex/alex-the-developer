@@ -25,10 +25,10 @@ const HeroPost = ({
     <section>
       <div className="hero">
       <h1 id="blog" className="slide-in-bottom mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Blog</h1>
-      <div className="slide-in-bottom mb-8 md:mb-16" >
+      <div className="slide-in-bottom mb-8 md:mb-16 max-w-[75vw] mx-auto" >
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 max-w-[65vw] mx-auto lg:gap-x-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             <Link
